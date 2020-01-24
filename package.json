@@ -1,0 +1,35 @@
+{
+  "name": "@movable/ember-cli-deploy-gitlab-scm-data-generator",
+  "description": "Generate SCM data for `ember-cli-deploy` on GitLab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:movableink/ember-cli-deploy-gitlab-scm-data-generator.git",
+  "author": "Alex LaFroscia <alafroscia@movableink.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "eslint .",
+    "release": "standard-version"
+  },
+  "dependencies": {
+    "core-object": "^3.1.5",
+    "simple-git": "^1.130.0"
+  },
+  "devDependencies": {
+    "@movable/eslint-config": "^0.5.0",
+    "@movable/eslint-config-node": "^0.4.1",
+    "@movable/prettier-config": "^0.3.0",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.2",
+    "standard-version": "^7.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{json,md}": "prettier --write"
+  }
+}
