@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "core-object": "^3.1.5",
-    "simple-git": "^1.130.0"
+    "simple-git": "^3.3.0"
   },
   "devDependencies": {
     "@movable/eslint-config": "^0.5.0",
