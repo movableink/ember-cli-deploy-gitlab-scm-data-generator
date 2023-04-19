@@ -23,6 +23,9 @@
     "lint-staged": "^10.0.2",
     "standard-version": "^7.1.0"
   },
+  "resolutions": {
+    "minimist": "^1.2.6"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
